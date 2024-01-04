@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="Heading"> Javascript?</h1>
+    <hr>
+    <h2>What is Javascript?</h2>
+    <p>JavaScript (JS) is a scripting language used<br> 
+        in web development to make websites interactive and dynamic.<br> 
+         It runs on the user's web browser, enabling actions like user<br> 
+          input responses, data fetching, and enhancing the overall<br> 
+           user experience. JavaScript is versatile, object-oriented,<br> 
+            and supports asynchronous programming. It is a key <br> 
+            technology for building modern web applications.</p>
+            <hr>
+            
+<h4>In HTML, JavaScript code is inserted between < script > and < /script > tags</h4>
+
+<p> < script src="index.js" >< script ><p>
+    <hr>
+
+
+
+    
+           <h3> how to print hello world in Javascript?</h3>
+    
+           <p>In JavaScript, you can print "Hello, World!" <br>
+            to the console using the console.log() statement.<br>
+             Here's a simple <br><br>
+             
+             example:<p>
+
+                <b>console.log("Hello, World!");<br>
+
+                <hr>
+                <h3>*************operator**************</h3>
+
+                <h3>What is operators?</h3>
+                <p>Operators in JavaScript are symbols or keywords<br>
+                 that perform operations on variables or values. <br>
+                 They are fundamental building blocks for creating <br>
+                 expressions, which are combinations of values and <br>
+                 operators that produce a result.
+
+               <p>  Here are some common types of operators in JavaScript:-</p>
+               <hr>
+               <h4>Arithmetic Operators:</h4>
+               <p>Arithmetic operators perform mathematical operations on numbers.</p>
+                <ul>
+
+                    <li>Addition (+): Adds two numbers.</li>
+                    <p>let sum = 5 + 3;  // Result: 8</p>
+
+                </ul>
+<ul>
+    <li>Subtraction  (-): Subtracts the right operand from the left operand.</li>
+    <p>let difference = 10 - 4;  // Result: 6
+    </p>
+</ul>
+
+<ul>
+    <li>Multiplication (*): Multiplies two numbers.</li>
+    <p>let product = 2 * 6;  // Result: 12
+    </p>
+
+</ul>
+<ul>
+    <li>Division (/): Divides the left operand by the right operand.</li>
+    <p>let quotient = 8 / 2;  // Result: 4
+    </p>
+</ul>
+<ul>
+    <li>Modulus (%): Returns the remainder of the division.</li>
+    <p>let remainder = 15 % 4;  // Result: 3
+    </p>
+</ul>
+<hr>
+<h4>Assignment Operators:</h4>
+<p>Assignment operators assign values to variables.</p>
+
+<ul>
+    <li>Assignment (=): Assigns the value on the right to the variable on the left.</li>
+    <p>let x = 10;
+    </p>
+</ul>
+<ul>
+    <li>Compound Assignment (e.g., +=, -=, *=, /=): Performs an operation and assigns the result to the variable.</li>
+    <p>let y = 5;
+        y += 3;  // Equivalent to y = y + 3;  // Result: 8
+        </p>
+</ul>
+<hr>
+<h4>Comparison Operators:</h4>
+<p>Comparison operators compare values and return a Boolean result (true or false).</p>
+
+<ul>
+    <li>Equal (==): Checks if two values are equal.</li>
+    <p>let isEqual = (5 == "5");  // Result: true (loose equality)
+    </p>
+</ul>
+<ul>
+    <li>let isEqual = (5 == "5");  // Result: true (loose equality)
+    </li>
+    <p>let isStrictEqual = (5 === "5");  // Result: false (strict equality)
+    </p>
+</ul>
+
+<ul>
+    <li>Not Equal (!= and !==): Checks if two values are not equal</li>
+    <p>let notEqual = (5 != "5");     // Result: false (loose inequality)
+        let strictNotEqual = (5 !== "5");  // Result: true (strict inequality)
+        </p>
+</ul>
+<hr>
+<h4>Logical Operators:</h4>
+<p>Logical operators perform logical operations and return a Boolean result.</p>
+<ul>
+    <li>Logical AND (&&):</li>
+    <p>The logical AND operator (&&) returns true if both operands are true, and false otherwise.</p>
+    <p>let x = true;
+        let y = false;
+        
+        let result = x && y;  // Result: false
+        <br>
+      
+        In the example above, result is false because both x and y are not true<p>
+        
+</ul>
+<ul>
+    <li> Logical OR (||):</li>
+    <p>The logical OR operator (||) returns true if at least one of the operands is true, and false otherwise.</p>
+    <p>
+        let a = true;
+let b = false;
+
+let outcome = a || b;  // Result: true
+<br>In this example, outcome is true because a is true, even though b is false.
+    </p>
+</ul>
+<ul>
+    <li>Logical NOT (!):</li>
+    <p>The logical NOT operator (!) is a unary operator that negates the boolean value of its operand.<br> If the operand is true, ! makes it false; if the operand is false, ! makes it true.</p>
+    <p>let isOpen = true;
+
+        let isClosed = !isOpen;  // Result: false<br>Here, isClosed is false because isOpen is true, and ! negates it.</p>
+        
+</ul>
+<hr>
+
+<h4>Unary operators</h4>
+<p>As the name indicate,unary operators act on only one operand.
+    <br>
+    <ul>
+        <li>Unary minus operator(-)</li>
+        <li>Increment operator(++)</li>
+
+        <li>Decrement operator(--)</li>
+    </ul>
+</p>
+
+<ul>
+    <li>Unary minus operator(-)</li>
+    <p>This operator is used to negate a given value.
+        <br>negation means converting a negative value into positive and vice versa,<br><br>for exapmle:-</p>
+
+        <p>int x=5;<br>
+        system.out.println(-x); will display-5.<br>
+        system.out.println(-(-x)); will display 5.</p>
+
+        <p>in this code snipped , the unary minus(-)operator<br>is used on variablex
+        xto negate its value,<br>the value of x is 5 in the beginning.its became-5 when unary<br>minus is applied on it.</p>
+
+</ul>
+
+
+<ul>
+    <li>increment operator(++)</li>
+    <p>This operator increase the value of a variable bye 1,
+        <br>for example:-
+    </p>
+    <p>int x=1;<br>
+        ++x will make x=2<br>
+        x++ now x=3
+        <br><br>
+        Hence,the value of the variable x is incremented by 1 when ++ operator is used before or afterit.
+  </p>
+  <ul>
+    <p>There are two increment operator.</p>
+    <li>pre-incrementation</li>
+    <li>post-incrementation</li>
+  </ul>
+<ul>
+    <li>decrement operator(--)</li>
+    <p>This operator increase the value of a variable bye 1,
+        <br>for example:-
+    </p>
+    <p>int x=1;<br>
+        --x will make x=2<br>
+        x-- now x=3
+        <br><br>
+        This means the value of x is decrement every time we use--operator on it.
+  <ul>
+    <p>There are two decrement operator.</p>
+    <li>pre-decrementaion</li>
+    <li>post-decrementaion</li>
+  </ul>
+
+</ul>
+
+
+<hr>
+<ul>
+    <h4>Telational operator</h4>
+    <p>These operators sre used for the purpose of comparing.<br>for example:-,<br>to know which one is bigger or whether two quantities are<br>equale or not.Relational operator are of 6 type:-</p>
+<ul>
+    <li>>  greater than operator</li>
+    <li>>= greater than or equal to </li>
+    <li>< less than operator</li>
+    <li><= less than or equal to </li>
+    <li>== equal to operator</li>
+    <li>!=not equal to operator</li>
+
+    <p>This  statement could be applied in a program as follows:<br><br>
+        if(a>b)system.out.println(a);<br>
+        if(a==100)system.out.println("a value equals to 100");
+</ul>
+
+</ul>
+
+
+<hr>
+
+<ul>
+<h4>Boolean operators<h4>
+    <p> These operator act on boolean variables and produce boolean type result.<br>The following 3 are boolean operator: </p>
+<ul>
+    <li> & Boolean and operator</li>
+    <li>|Boolean or operator</li>
+    <li>! boolean not operator</li>
+</ul>
+<p>Boolean &operator returns true if both the variable are true.boolean| operator returns <br>
+ true if  any one of the variable is true.boolean! operator converts true to false and vice versa.</p>
+<p>Boolean a,b;//declare two boolean type variables</p>
+<ul>
+    <li>a=true;//store boolean value true into a</li>
+    <li>b=false;//store boolean value false into b</li>
+    <li>a & b //returns false & gives true only if both are true</li>
+    <li>a | b //returns true.| gives true if any one is true</li>
+    <li> a & a //returns true since both are true</li>
+    <li>b | b //returen false since both are false</li>
+    <li>!a //gives false</li>
+    <li> !b //gives true</li>
+</ul>
+
+<hr>
+
+
+                   
+ <hr>
+
+ <h3>*************if-else-statment**************</h3>
+
+ <h3>In JavaScript, the if...else statement is used for conditional
+    <br> execution of code. It allows you to execute a block of 
+    <br>code if a specified condition is true, and a different block
+    <br> of code if the condition is false.</h3>
+    <p>if (condition) {<br>
+        // Code to be executed if the condition is true<br>
+      } else {<br>
+        // Code to be executed if the condition is false<br>
+      }<br>
+      </p>
+      <p>Here's a simple example:</p>
+      <p>var age = 20;<br>
+
+        if (age >= 18) {<br>
+          console.log("You are an adult.");<br>
+        } else {<br>
+          console.log("You are a minor.");<br>
+        }<br>
+        </p>
+        <p>
+            In JavaScript, the if...else statement is used for conditional execution of code. It allows you to execute a block of code if a specified condition is true, and a different block of code if the condition is false.
+            
+            Here's the basic syntax of the if...else statement:
+            
+            javascript
+            Copy code
+            if (condition) {
+              // Code to be executed if the condition is true
+            } else {
+              // Code to be executed if the condition is false
+            }
+            Here's a simple example:
+            
+            javascript
+            Copy code
+            var age = 20;
+            
+            if (age >= 18) {
+              console.log("You are an adult.");
+            } else {
+              console.log("You are a minor.");
+            }
+            <p>In this example, if the age is 18 or greater, it will print "You are an adult."
+                <br> Otherwise, it will print "You are a minor."</p>
+<p>var time = 14;<br>
+
+    if (time < 12) {<br>
+
+      console.log("Good morning!");<br>
+
+    } else if (time < 18) {<br>
+
+      console.log("Good afternoon!");<br>
+
+    } else {<br>
+
+      console.log("Good evening!");<br>
+
+    }<br>
+
+    </p>
+    <p>In this example, it checks the value of time and prints 
+        <br>a different message based on whether it's morning, afternoon, or evening.
+
+        Remember to use proper indentation for better code readability.
+        <br> Also, be careful with the condition expressions to ensure they evaluate as expected.</p>
+
+<hr>
+<hr>
+<h3>*************Arrays**************</h3>
+<h3>Arrays</h3>
+<p>Arrays are variables which can hold more than one value.</p>
+
+<p><b>const fruits=["banana","apple","graphes"
+    <br>
+    const a=[7,"Harry",false]
+</b></p>
+
+<ul>
+    <li>Accessing values.
+        <br>
+        let number=[1,2,7,9]<br>
+        number[0]<br>
+        number[1]
+
+    </li>
+</ul>
+<br>
+<ul>
+    <li>Finding the length
+        <br>
+        let number=[1,7,9,21]<br>
+        number[0]=1<br>
+        number.length
+
+    </li>
+</ul>
+<br>
+<ul>
+    <li>Changing the value
+        <br>
+        let number=[7,2,40,9]<br>
+        number[1]=8<br>
+        "numbers" now[7,2,8,9]<br>
+        Arrays are mutable<br>
+        Arrays can be changed.
+
+    </li>
+</ul>
+<br>
+
+<ul>
+    <li>Changing the value
+        <br>
+        let number=[7,2,40,9]<br>
+        number[1]=8<br>
+        "numbers" now[7,2,8,9]<br>
+        Arrays are mutable<br>
+        Arrays can be changed.
+
+    </li>
+</ul>
+<br>
+<ul>
+    <li>In javascript,arrays are bojects the type of operators<br>
+         on arrays returns oject.
+        <br>
+       const n=[1,7,9]<br>
+       type of n=returns"objects"<br>
+       <p>Arrays can hold many values under a single name</p>
+
+    </li>
+</ul>
+<br>
+<ul>
+    <li>There are some important arrays methods in javascript<br>
+        some of them are as follows:-</li>
+        
+      <li>to string()=convert can arrays to a string of comma separated values
+        <br>
+        let n=[1,7,9]
+        n to sting()
+      </li>
+      <br>
+      <li>join()=join all the arrays elements using a separators.
+        <br>
+        let n=[7,9,13]<br>
+        n.join("_")
+      </li>
+      <br>
+      <li>pop(=removes last element from the arrays)
+        <br>
+        let n=[1,2,3]<br>
+        n.pop=updates the original arrays returns the popped value.
+      </li>
+
+
+    
+</ul>
+<br>
+<li>push(=Adds a new element at the end of the arrays)
+    <br>
+    let n=[7,1,2,8]<br>
+    n.push(a)=moifies the original arrays.
+    =returns the new arrays length. 
+  </li>
+  
+
+
+</ul>
+<br>
+<li>shift()=removes first element and returns it.
+    </li>
+  </ul>
+<br>
+<li>unshift()=Adds elements to the beginning returns new arrays length
+</li>
+</ul>
+<br>
+<li>deleted=Arrays element can be deleted using the deleted operators
+    <br>
+    let d=[7,8,9,10]
+    <br>
+    deleted d[1]=deleted is an operators
+</li>
+</ul>
+<br>
+<li>concate()=used to join arrays to the given arrays.<br>
+    let a=[1,2,3]<br>
+    let b=[4,5,6]<br>
+    let c=[9,8,7]<br>
+    console.log(a.concat(a2,a3))=returns [1,2,3,4,5,6,9,8,7]
+    <br>concat return new arrays does not change existing arrays<br>
+</li>
+</ul>
+<br>
+<li>sort()=sort(method is used to sort an arrays alphabetically.<br>
+    let a=[7,9,8]<br>
+    console.log(a.sort)=a change to[7,8,9]modefies the original arrays.
+    <p>sort() takes an optinal comapre function.<br>
+        is this function is provided as the first argumnet,the sort()<br>
+    function will consider these values (the values returns from the comapre function)<br> as the basis of sorting.</p>
+</li>
+</ul>
+<br>
+<li>splice()=splice can be used to add new items an arrays.
+    <br>const number=[1,23,4,5]<br>
+    console.log(number.splice)(2,1,23,24)
+</li>
+</ul>
+<br>
+<li>slice()=slices out a piece from an arrays<br>it creates a new arrays.
+    <br>
+    const num=[1,2,3,4]<br>
+    num.slice(2)  ==>[3,4]
+    num.slice(1,3)==>[2,3]
+</li>
+</ul>
+<br>
+<li>reverse()=reverse the element in the sources arrays.
+</li>
+</ul>
+<br>
+<hr>
+<hr>
+<h3>looping through arrays.</h3>
+<p>Arrays can be looped through using <br>the classical javascript for loop or through some<br>other methods discussed below:-</p>
+<li>
+    For-each-loop:-call a function ,once for eacjh arrays element.<br>
+
+    const a=[1,2,3]<br>
+    console.log a.for each((value,index,arrays))=><br>
+        {//function logical});
+    
+</li>
+<br>
+<li>
+    Map():-creates a new arrays by performing<br> some operation on each arrays element.<br>
+     const a=[1,2,3]<br>
+     a.map((value,index,array)=>
+     { return value*value;
+    })
+
+
+</li>
+<br>
+<li>
+    Filter():-filter an arrays with values that passes a test <br>creates a new arrays.<br>
+    const a=[1,2,3,4,5]
+    a.filter(greater_than_5)
+</li>
+<br>
+<li>Reduce method:-Reduces an array to a single value.
+    const n=[1,8,7,11]
+    let sum=number.reduce(add)
+</li>
+<br>
+<li>
+    Arrays from:-used to create an arrays from<br>any other object<br>
+    arrays from("Harry")
+    <li>
+        <br>
+        <li>
+          for-of:-  for-in-loop can be used to get the values from an arrays.<br>
+          
+          for(let i of num){<br>
+            console.log(i)<br>
+          }
+        </li>
+        <br>
+        <li>
+            For-in:-for-in-loop can be used to get the keys from an arrays.
+            for(let i in num){<br>
+                console.log(i)<br>
+            }
+        </li>
+        <hr>
+        <hr>
+
+
+        <h3>*************type of conversion**************</h3>
+        <h3>Type of conversion.</h3>
+        <li>converting string to number.</li>
+        <li>converting number to string.</li>
+        <li>converting Dates to number.</li>
+        <li>converting numbers to dates.</li>
+        <li>converting booleans to number.</li>
+        <li>converting number to booleans.</li>
+
+        <p>In programming ,type onversion is the process of<br>converting data of one type to another for example:-<br>
+            <br>converting string to number<br>
+
+            <p>There are two types of conversion in java script</p>
+            <li>implicit conversion=automatic type conversion</li>
+            <li>Explicit conversion=Manual type conversion</li>
+
+            <li>implicit conversion=automatic type conversion<br>
+              
+                <p>In certain situation, javascript automatically<br>
+                convert one data type to another(to the right type)<br>
+                this is known as implicit conversion.
+                </p>
+                <li>implicit conversion</li>
+                <p>//numeric string used with+ gives string type<br>
+                let result;<br>
+                console.log(result)//"32"<br><br>
+                result='3'+true;<br>
+                console.log(result);//"3true"<br><br>
+                result='3'+undefined;<br>
+                console.log(result);//"3undefined"<br><br>
+                result='3+null;<br>
+                console.log(result);//"3null"
+
+
+            </p>
+
+            
+            </li>
+            <br>
+            <li>Example:-2  implicit conversion to number</li>
+            <p>//numeric string used with -,/,* result number type.</p>
+            <p>let result;<br>
+                result='4'-'2';<br>
+                console.log(result);//2<br>
+                <br>
+                result='4'-2;<br>
+                console.log(result);//2<br>
+                <br>
+                result='4'*2;
+                console.log(result);//8<br>
+                <br>
+                result='4'/2;<br>
+                console.log(result);//2
+
+            </p><br>
+            <br>
+            <li>Example 3: Non-numeric String Results to NaN<br>
+                // non-numeric string used with - , / , * results to NaN<br>
+                
+                let result;<br>
+                
+                result = 'hello' - 'world';<br>
+                console.log(result); // NaN<br>
+                
+                result = '4' - 'hello';<br>
+                console.log(result); // NaN</li>
+<br><br>
+<li>Example 4: Implicit Boolean Conversion to Number<br>
+    // if boolean is used, true is 1, false is 0<br>
+    
+    let result;<br>
+    
+    result = '4' - true;<br>
+    console.log(result); // 3<br>
+    
+    result = 4 + true;<br>
+    console.log(result); // 5<br>
+    
+    result = 4 + false;<br>
+    console.log(result); // 4</li>
+    <br>
+    <br>
+    <li>
+        Example 5: null Conversion to Number<br>
+// null is 0 when used with number<br>
+let result;<br>
+
+result = 4 + null;<br>
+console.log(result);  // 4<br>
+
+result = 4 - null;<br>
+console.log(result);  // 4<br>
+    </li>
+    <br>
+    <br>
+    <li>
+        Example 6: undefined used with number, boolean or null<br>
+// Arithmetic operation of undefined with number, boolean or null gives NaN<br>
+
+let result;<br>
+
+result = 4 + undefined;<br>
+console.log(result);  // NaN<br>
+
+result = 4 - undefined;<br>
+console.log(result);  // NaN<br>
+
+result = true + undefined;<br>
+console.log(result);  // NaN<br>
+
+result = null + undefined;<br>
+console.log(result);  // NaN<br>
+    </li>
+    <br>
+    <br>
+    <li>
+       <h3> JavaScript Explicit Conversion<h3><br>
+        You can also convert one data type to another as per your needs. <br>
+        The type conversion that you do manually is known as explicit type conversion.<br>
+        
+        In JavaScript, explicit type conversions are done using built-in methods.<br>
+
+    </li>
+    <br>
+    <br>
+    <li>Convert to Number Explicitly<br>
+        To convert numeric strings and boolean values to numbers, you can use Number(). For example,<br>
+        
+        let result;<br>
+        
+        // string to number<br>
+        result = Number('324');<br>
+        console.log(result); // 324<br>
+        
+        result = Number('324e-1')  <br>
+        console.log(result); // 32.4<br>
+        
+        // boolean to number<br>
+        result = Number(true);<br>
+        console.log(result); // 1<br>
+        
+        result = Number(false);<br>
+        console.log(result); // 0</li>
+        <br>
+        <br>
+        <li>In JavaScript, empty strings and null values return 0. For example,<br>
+
+            let result;<br>
+            result = Number(null);<br>
+            console.log(result);  // 0<br>
+            
+            let result = Number(' ')<br>
+            console.log(result);  // 0</li>
+            <br>
+            <br>
+            <li>
+                If a string is an invalid number, the result will be NaN. For example,<br>
+
+let result;<br>
+result = Number('hello');<br>
+console.log(result); // NaN<br>
+
+result = Number(undefined);<br>
+console.log(result); // NaN<br>
+
+result = Number(NaN);<br>
+console.log(result); // NaN<br>
+            </li>
+            <br>
+            <br>
+            <li>
+                Note: You can also generate numbers from strings using parseInt(), parseFloat(), unary operator + and Math.floor(). For example,<br>
+
+let result;<br>
+result = parseInt('20.01');<br>
+console.log(result); // 20<br>
+
+result = parseFloat('20.01');<br>
+console.log(result); // 20.01<br>
+
+result = +'20.01';<br>
+console.log(result); // 20.01<br>
+
+result = Math.floor('20.01');<br>
+console.log(result); // 20<br>
+            </li>
+<br>
+<br>
+<li>
+    2. Convert to String Explicitly<br>
+To convert other data types to strings, you can use either String() or toString(). For example,<br>
+
+//number to string<br>
+let result;<br>
+result = String(324);<br>
+console.log(result);  // "324"<br>
+
+result = String(2 + 4);<br>
+console.log(result); // "6"<br>
+
+//other data types to string<br>
+result = String(null);<br>
+console.log(result); // "null"<br>
+
+result = String(undefined);<br>
+console.log(result); // "undefined"<br>
+
+result = String(NaN);<br>
+console.log(result); // "NaN"<br>
+
+result = String(true);<br>
+console.log(result); // "true"<br><br>
+
+result = String(false);<br>
+console.log(result); // "false"<br><br>
+
+// using toString()<br>
+result = (324).toString();<br>
+console.log(result); // "324"<br><br>
+
+result = true.toString();<br>
+console.log(result); // "true"<br>
+
+Note: String() takes null and undefined and converts them to string.<br>
+ However, toString() gives error when null are passed.
+</li>
+<br>
+<br>
+<li>
+    3. Convert to Boolean Explicitly<br><br>
+    To convert other data types to a boolean, you can use Boolean().<br><br>
+    
+    In JavaScript, undefined, null, 0, NaN, '' converts to false. For example,<br><br>
+    
+    let result;<br>
+    result = Boolean('');<br>
+    console.log(result); // false<br><br>
+    
+    result = Boolean(0);<br>
+    console.log(result); // false<br><br>
+    
+    result = Boolean(undefined);<br>
+    console.log(result); // false<br><br>
+    
+    result = Boolean(null);<br>
+    console.log(result); // false<br><br>
+    
+    result = Boolean(NaN);<br>
+    console.log(result); // false<br>
+    <br>
+    All other values give true. For example,<br>
+
+result = Boolean(324);<br>
+console.log(result); // true<br><br>
+
+result = Boolean('hello');<br>
+console.log(result); // true<br><br>
+
+result = Boolean(' ');<br>
+console.log(result); // true<br>
+</li>
+
+
+
+
+        </body>
+        </html>
